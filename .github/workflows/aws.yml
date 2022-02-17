@@ -8,4 +8,4 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Secrets
-        run: echo "Hallo Nikita"
+        run: echo "Hallo ${{ secrets.SECRET_NAME }}"
